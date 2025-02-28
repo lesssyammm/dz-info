@@ -29,7 +29,7 @@ for i in range(n):
     a.append(randint(1, 100))
 
 print(a)
-k1, k2 = 0, 0
+
 for i in range(n-1):
     for j in range(-1, -n+i, -1):
         if a[j] < a[j - 1]:
