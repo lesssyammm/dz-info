@@ -1,5 +1,6 @@
 #кол-во делителей
 from math import sqrt
+
 def f(n):
     t = 0
     d = 1
@@ -10,6 +11,8 @@ def f(n):
     if sqrt(n) == int(sqrt(n)):
         t += 1
     return t
+
+
 n = int(input())
 x = f(n)
 print(x)
