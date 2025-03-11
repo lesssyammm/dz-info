@@ -2,6 +2,12 @@ from random import randint
 n = 10
 a = [randint(-100, 100) for _ in range(n)]
 
+#6
+
+print(a)
+a.sort(key = lambda x: (-abs(int(str(abs(
+x))[0]) - int(str(abs(x))[-1])), x))
+-print(a)
 
 #7
 a = [1, 4, 5, 10, 20, 25, 100, 200, 233, 230, 201, 44, 13, 8, 2]
