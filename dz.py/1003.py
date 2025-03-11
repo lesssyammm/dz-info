@@ -1,31 +1,36 @@
-from random import randint
-n = 10
-a = [randint(-100, 100) for _ in range(n)]
+#11
 
-#6
+# path = "C:\\Users\\olesy\\Desktop\\Новая папка (2)\\"
+# with open(path + "11_1.txt", "rt") as f1, open(path + "11_2.txt", "wt") as f2:
+#     line = f1.readline()
+#     while line:
+#         b = bin(int(line))
+#         o = oct(int(line))
+#         h = hex(int(line))
+#         f2.write(b + " " + o + " " + h + "\n")
+#         line = f1.readline()
 
-print(a)
-a.sort(key = lambda x: (-abs(int(str(abs(x))[0]) - int(str(abs(x))[-1])), x))
-print(a)
+#14
 
-#7
-a = [1, 4, 5, 10, 20, 25, 100, 200, 233, 230, 201, 44, 13, 8, 2]
-a.sort()
-print(a)
-print(a[-1])
+# path = "C:\\Users\\olesy\\Desktop\\Новая папка (2)\\"
+# f1 = open(path + "14.txt", "r")
+# s = f1.readlines()
+# s = [int(i) for i in s]
+# s.sort(key = lambda x: int(str(abs(x))[-1]))
+# f1.close()
+# f2 = open(path + "14_2.txt", "w")
+# f2.write(f'Числа по возрастанию последней цифры: {s}\n')
+# f2.close()
 
-#8
+#16
 
-a.sort(reverse = True)
-print(a)
-x = int(input())
-L = 0
-R = n
-while R - L != 1:
-    c = (R + L) // 2
-    if x > a[c]:
-        R = c
-    else:
-        L = c
+path = "C:\\Users\\olesy\\Desktop\\Новая папка (2)\\"
+with open(path + "16_1.txt", "rt") as f1, open(path + "16_2.txt", "rt") as f2, open(path + "16_3.txt", "wt") as f3:
+    line1 = f1.readline()
+    line2 = f2.readline()
+    while line1 and line2:
+        f3.write(line1 + "\n" + line2 + "\n")
+        line1 = f1.readline()
+        line2 = f2.readline()
         
-print(a[L + 1], a[L - 1])
+        
