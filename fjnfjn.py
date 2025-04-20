@@ -6,7 +6,7 @@ def f(n):
     d = 1
     while d < sqrt(n):
         if n % d == 0:
-            t += 1
+            t += 2
         d += 1
     if sqrt(n) == int(sqrt(n)):
         t += 1

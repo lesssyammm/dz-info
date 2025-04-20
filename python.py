@@ -11,6 +11,6 @@ def f(n):
     else:
         return False
 
-n = 1247417
+n = 89
 x = f(n)
 print(x)
