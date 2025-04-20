@@ -21,6 +21,10 @@
 # p = bin(p)[2:]
 # r = zn + p + c[1:] + f(ost)
 # r = r + '0'*(32 - len(r))
+#print(hex(int(r, 2))[2:].upper())
+
+#2
+
 
 a = input()
 if a[0] not in 'ABCDEF':

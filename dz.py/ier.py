@@ -25,16 +25,13 @@ def g(n):
     return False
 
 
-print("[0] - завершение", "[1] - ближ. простое число", "[2] - действительная часть", sep = '\n')
 
-n = int(input())
-while 1:
-    print(f(n))
-for i in range(2, 1000):
+
+for i in range(2, 1000):#формируем список простых
     if g(i) == True:
         a.append(i)
 
-def p(x):
+def p(x):#поиск ближ простого
     for j in range(len(a)):
         q = x - a[j]
         w = a[j + 1] - x
@@ -43,4 +40,7 @@ def p(x):
         if q == w:
             return a[j]
 
+print("[0] - завершение", "[1] - ближ. простое число", "[2] - действительная часть", sep = '\n')
 
+n = int(input())
+print(f(n))
