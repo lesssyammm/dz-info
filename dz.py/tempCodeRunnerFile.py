@@ -1,11 +1,4 @@
-    def f(n):
-        if n == 1:
-            x = int(input())
-            return p(x)
-        if n == 2:
-            dig = float(input())
-            c = int(dig)
-            b = dig - c
-            return b
-        if n == 0:
-            return
+for mask in range(1, 31):
+#     net1 = ip_network(f"{ip1}/{mask}", 0)
+#     net2 = ip_network(f"{ip2}/{mask}", 0)
+#     print(bin(net1.netmask)[2:])

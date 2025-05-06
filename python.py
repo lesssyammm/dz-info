@@ -1,16 +1,18 @@
 #простое число
 from math import sqrt
 
-def f(n):
-    k = 0
-    for d in range(1, int(sqrt(n)) + 1):
-        if n % d == 0:
-            k += 1
-        if k == 1:
-            return True
-    else:
+def is_prime(n):
+    if n <= 1:
         return False
-
-n = 89
-x = f(n)
+    k = 0
+    for x in range(1, int(sqrt(n)) + 1):
+        if n % x == 0:
+            k += 2
+    if sqrt(n) == int(sqrt(n)):
+        k += 1
+    if k == 2:
+        return True
+    return False
+n = 13
+x = is_prime(n)
 print(x)

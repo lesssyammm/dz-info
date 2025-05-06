@@ -31,19 +31,18 @@ for x in range(2):
 
 6
 
-def f(s, n):
-    global k
+def f(s, n, k, alph):
     if len(s) == n:
         if s.count('Е') == 0 and 'АА' not in s:
             print(k, s)
-        k += 1    
+        k += 1
     else:
-        for c in alf:
-            f(s + c, n)
+        for c in alph:
+            f(s + c, n, k, alph)
 
-alf = 'АВЕНС'
-k = 1
-f('', 4) #27
+
+f('', 4, alph = 'АВЕНС', k=1) #27
+
 
 8
 
