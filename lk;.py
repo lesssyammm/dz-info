@@ -1,14 +1,25 @@
-def f(n):
-    n = n.replace("3", "4")
-    n = n.replace("7", "8")
+from math import *
 
-    k = 1
-    for x in n:
-        k *= int(x)
-    return k
+def is_prime(p):
+    k = 0
+    for i in range(2, int(sqrt(p)) + 1):
+        if p % i == 0:
+            k += 2
+    if sqrt(p) == int(sqrt(p)):
+        k += 1
+    if k == 0:
+        return 1
+    return 0
 
 
-for n in range(1000, 10000):
-    if f(str(n)) == 256:
-        print(n)
-        break
+n = int(input())
+p = 1
+q = 1
+for i in range(2, n):
+    if n % i == 0 and is_prime(i) == 1:
+        p = i
+a = n // p
+if is_prime(a) == 1:
+    q = a
+print(p, q)
+        
